@@ -1,0 +1,33 @@
+h1 {
+  color: teal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+body section {
+  height: 100vh;
+  padding: 10em;
+  width: 100vw;
+}
+body #section2 {
+  background-color: #98dad9;
+  color: white;
+}
+body #section1 {
+  background-color: rgb(0, 126, 243);
+  color: white;
+}
+body #section3 {
+  background-color: rgba(153, 136, 221, 0.8666666667);
+}
+body .scroll {
+  font-size: 50px;
+}
