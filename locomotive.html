@@ -7,18 +7,160 @@
     <title>Document</title>
    <link rel="stylesheet" href="main.css">
    <link rel="stylesheet" href="base.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
-    <h1>Locomotive</h1>
+    <!-- <div class="loader">
+        <div class="first"></div>
+        <div class="middle"></div>
+        <div class="third"></div>
+    </div> -->
+
+ 
 
     <div data-scroll-container>
         <section data-scroll-section id="section1">
-            <h1 >Moyowa</h1>
-            <p👋</p>
+            <div class="left">
+                <div class="logo">Moyowa</div>
+
+                <nav class="info">
+                    <p>
+                        Linkedin
+                    </p>
+                     &nbsp;&nbsp;
+                      <p>
+                        Github
+                      </p>
+                      &nbsp;&nbsp;
+                      <p>
+                        Twitter
+                      </p>
+                      &nbsp;&nbsp;
+                   
+                </nav>
+    
+            </div>
+
+
+            <div class="right">
+                <div class="first-block"></div>
+                <div class="menu-container">
+                    <!-- <div class="menu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div> -->
+                  </div>
+    
+    
+                  <div class="story">
+                <h1>Moyowa Etchie</h1>
+                <p>Front-end Engineer</p>
+                <p>&darr;</p>
+    
+            </div>
+
+            <div class="socials-container">
+                <li class="social">
+                 
+    
+                  <a href="#">About</a>
+                  &nbsp;
+                    <a href="">Projects</a>
+                    &nbsp;
+                    <a href="#">Contact</a>
+    
+                    &nbsp;
+            </div>
+
+            
+            </div>
+            
+        <div class="center-container"></div>
+
         </section>
         <section class="section2" id="section2" data-scroll-section>
-            <h1 data-scroll data-scroll-speed="10">What's up?</h1>
-            <p data-scroll data-scroll-speed="10">😬</p>
+            <div class="wrapper">
+                  <!-- ---overlay  -->
+</div>    <!-- <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div> -->
+
+    <!-- <nav class="navbar">
+        <div class="menu">
+          <ion-icon name="ios-menu"></ion-icon>
+        </div>
+        <div class="lang">eng</div>
+        <div class="search">
+          <ion-icon name="ios-search"></ion-icon>
+        </div>
+      </nav> -->
+
+      
+    <!-- Social media -->
+    <div class="media">
+        <ul>
+            <li>Twitter</li>
+            <li>Github</li>
+            <li>Instagram</li>
+        </ul>
+    </div>
+
+
+
+    
+    <!-- ---main text----- -->
+
+    <div class ="text">
+        <h1><span class="hidetext">toni&guy</span></h1>
+        <h2>duality</h2>
+        <h3>
+            <span class="hidetext">collection 2022 <br> duality</span>
+        </h3>
+        <p>
+            <span class="hidetext">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quis, delectus facere
+              neque sunt commodi quae
+              culpa dolores doloribus magnam?
+            </span>
+          </p>
+    </div>
+
+
+       <!-- ---sponsor -->
+       <div class="sponsor">
+        <h2>MOYOWA.</h2>
+        <p>official sponsor</p>
+      </div>
+
+      <div class="distortion"></div>
+
+
+           <!-- icons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- GSAP -->
+   <!-- gsap -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+   integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+     <!-- three js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+  integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+<!-- hover-effect js -->
+<script src="./hover-effect.umd.js"></script>
+
+
+
+
+  
+
+
+<!-- 
+                <h1 data-scroll data-scroll-speed="10">What's up?</h1>
+                <p data-scroll data-scroll-speed="10">😬</p> -->
+
+            </div>
+           
         </section>
         <section class="section3" id="section3" data-scroll-section>
             <h1 data-scroll-class="scroll" data-scroll data-scroll-speed="10">go back</h1>
@@ -37,6 +179,37 @@
     direction: 'horizontal'
         });
     })();
+
+    new hoverEffect({
+        parent: document.querySelector('.distortion'),
+      intensity: 0.2,
+      image1: './01.png',
+      image2: './02.png',
+      displacementImage: './diss.png',
+      imagesRatio: 380 / 300
+    })
+
+
+    gsap.to(".first",{
+        duration:1,
+        delay:1.8,
+        x:-1200,
+        ease:"power2.easeOut"
+    })
+
+    gsap.to(".middle",{
+        duration:2,
+        delay:1.4,
+        x:-1400,
+        ease:"power3.easeInOut"
+    })
+
+    gsap.to(".third",{
+        duration:2,
+        delay:1.2,
+        x:-1600,
+        ease:"bounce.out"
+    })
 </script>
 
 </html>
